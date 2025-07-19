@@ -1,10 +1,10 @@
-# 🚚 Smart Logistics and Supply Chain Management System
+ 🚚 Smart Logistics and Supply Chain Management System
 
-An **enterprise-level, event-driven microservices project** built using Java, Spring Boot, Kafka, and AWS. It simulates a backend logistics system like Flipkart or Amazon, with real-time order, inventory, vendor, delivery, notification, and analytics handling.
+An enterprise-level, event-driven microservices project built using Java, Spring Boot, Kafka, and AWS. It simulates a backend logistics system like Flipkart or Amazon, with real-time order, inventory, vendor, delivery, notification, and analytics handling.
 
 ---
 
-## 📌 Features
+📌 Features
 
 ✅ Event-driven microservices using Apache Kafka  
 ✅ Vendor restocking and Inventory management  
@@ -16,21 +16,21 @@ An **enterprise-level, event-driven microservices project** built using Java, Sp
 
 ---
 
-## 🧰 Tech Stack
+ 🧰 Tech Stack
 
 | Layer         | Tools / Technologies                          |
 |---------------|-----------------------------------------------|
 | Backend       | Java 17, Spring Boot, Spring Web, Spring JPA |
 | Messaging     | Apache Kafka                                 |
 | API Gateway   | (Optional) Spring Cloud Gateway              |
-| DB            | MySQL, Redis (optional)                      |
+| DB            | MySQL, Redis                                 |
 | Monitoring    | AWS SNS, Swagger                             |
-| DevOps        | Jenkins (optional), Docker (optional)        |
-| Auth (optional)| Spring Security, JWT                        |
+| DevOps        | Jenkins , Docker                             |
+| Auth          | Spring Security, JWT                         |
 
 ---
 
-## 🧱 Microservices Breakdown
+🧱 Microservices Breakdown
 
 | Service              | Port  | Responsibility                                |
 |----------------------|-------|-----------------------------------------------|
@@ -40,21 +40,14 @@ An **enterprise-level, event-driven microservices project** built using Java, Sp
 | Notification Service  | 8084  | Send SMS/email notifications via AWS SNS      |
 | Vendor Service        | 8085  | Register vendors and restock inventory        |
 | Analytics Service     | 8086  | Log all system events for reporting           |
-| Auth Service (optional)| 8087 | JWT-based login and token generation          |
+| Auth Service          | 8087 | JWT-based login and token generation           |
 
 ---
 
-## 🧾 Architecture Diagram
 
-> Make sure to place your image at `docs/architecture.png`
-
-![Architecture Diagram](./docs/architecture.png)
-
----
 
 ## 🔁 Kafka Event Flow
 
-```plaintext
 Order Service
      ↓
 [ Kafka Topic: order-events ]
